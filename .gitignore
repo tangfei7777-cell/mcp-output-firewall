@@ -6,3 +6,6 @@ dist/
 .env.*
 *.tgz
 coverage/
+
+# 本地 npm/pnpm 配置（可能含凭据，不入库）
+.npmrc
