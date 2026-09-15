@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tangfei7777-cell/mcp-output-firewall",
+  "title": "MCP Output Firewall",
+  "description": "Three-layer firewall for MCP: content inspection, egress policy and action policy. Runs as a proxy in the transport, or as a standalone server an agent calls before it acts.",
+  "repository": {
+    "url": "https://github.com/tangfei7777-cell/mcp-output-firewall",
+    "source": "github"
+  },
+  "version": "0.3.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-output-firewall",
+      "version": "0.3.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

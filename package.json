@@ -1,7 +1,8 @@
 {
   "name": "mcp-output-firewall",
-  "version": "0.2.0",
-  "description": "Three-layer firewall for MCP servers — content inspection, egress policy and action policy. Catches prompt injection, tool poisoning, exfiltration and leaked secrets before they reach your agent.",
+  "version": "0.3.0",
+  "mcpName": "io.github.tangfei7777-cell/mcp-output-firewall",
+  "description": "Three-layer firewall for MCP servers — content inspection, egress policy and action policy. Runs as a proxy or as a standalone MCP server an agent can call before it acts. Catches prompt injection, tool poisoning, exfiltration and leaked secrets.",
   "type": "module",
   "license": "MIT",
   "bin": {
@@ -14,6 +15,7 @@
     "./egress": "./lib/egress.js",
     "./action": "./lib/action.js",
     "./proxy": "./lib/proxy.js",
+    "./serve": "./lib/serve.js",
     "./benchmark": "./lib/benchmark.js"
   },
   "files": [
@@ -22,10 +24,11 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node test/run.js && node test/e2e.js && node test/layers.js",
+    "test": "node test/run.js && node test/e2e.js && node test/layers.js && node test/serve.js",
     "test:engine": "node test/run.js",
     "test:e2e": "node test/e2e.js",
     "test:layers": "node test/layers.js",
+    "test:serve": "node test/serve.js",
     "bench": "node lib/cli.js bench",
     "demo": "node lib/cli.js scan --demo --min-severity high",
     "rules": "node lib/cli.js rules"

@@ -72,6 +72,29 @@ operations (file writes, `git push`, payments) require an explicit yes.
 
 ---
 
+## Two shapes, because the check has two possible locations
+
+| Shape | Command | Where the check happens |
+|---|---|---|
+| **proxy** | `wrap -- <server>` | in the transport path — the firewall relays the whole session |
+| **server** | `serve` | in the agent's control flow — the agent calls the firewall itself |
+
+The proxy is the stronger shape when it applies, because nothing has to
+*remember* to ask. But it only applies when you control how a server is
+launched, and the interesting failure often happens somewhere no proxy sits: the
+agent fetches a page directly, reads a file, or follows up on a result from a
+server you don't own — and then decides for itself what to do next. At that
+moment a check that lives in a transport path the traffic never entered is not a
+control, it is a configuration file.
+
+`serve` is that missing shape. It is the same three layers, exposed as MCP
+tools, so the decision can be requested rather than merely imposed.
+
+The two compose. Run `serve` for the agent's own decisions; `wrap` the servers
+whose launch you control.
+
+---
+
 ## Install
 
 ```bash
@@ -105,6 +128,79 @@ mcp-output-firewall install --client claude --name filesystem -- \
 
 Modes for layer 1: `monitor` (log only, the default), `warn` (sanitise in band,
 then deliver), `block` (refuse, and fail loudly with a JSON-RPC error).
+
+---
+
+## Running as a server
+
+```bash
+mcp-output-firewall serve
+```
+
+It speaks both protocol eras: modern revisions (`2026-07-28` and later, which
+carry the version, client identity and capabilities per request in `_meta` and
+have no handshake) and legacy ones (`2025-11-25` and earlier, which open with
+`initialize`). It implements `server/discover`, which modern clients probe with,
+so a dual-era client resolves the era from the probe rather than from a guess.
+
+Client configuration:
+
+```json
+{
+  "mcpServers": {
+    "firewall": {
+      "command": "npx",
+      "args": ["-y", "mcp-output-firewall", "serve"]
+    }
+  }
+}
+```
+
+### The four tools
+
+| Tool | Question it answers | Layers |
+|---|---|---|
+| `check_tool_call` | may I run this call? | 2 + 3 |
+| `scan_content` | is this payload safe to read? | 1 |
+| `evaluate_tool_result` | may I hand this to the model? | 1, as a verdict |
+| `describe_policy` | what do you cover, and what do you miss? | — |
+
+`check_tool_call` returns `allow`, `confirm` or `block`, names the rule that
+decided it, and lists every destination the call would reach — an operator
+reading "allowed" needs to see *what* was allowed, not merely that something
+was. It never echoes the arguments back, because a call carrying a live
+credential must not have that credential written into the audit record of the
+call.
+
+`evaluate_tool_result` is the decision form of `scan_content`. It takes the same
+`monitor` / `warn` / `block` modes, and when the verdict is `sanitize` it returns
+the rewritten payload ready to hand on.
+
+`describe_policy` exists so a caller can learn what a clean verdict does and does
+not mean *before* trusting one. It returns the rule catalogue, the benchmark
+numbers, and the attack classes this architecture cannot catch — each with the
+layer expected to handle it instead.
+
+### What it refuses to do to itself
+
+This server's replies are read by a language model, which makes its output a
+delivery channel. Two rules follow, and both are asserted in the test suite:
+
+- **Evidence is neutralised, not quoted.** A finding's `evidence` goes through
+  the same sanitizer the proxy uses and comes back prefixed with an untrusted
+  marker, so a report *about* a payload cannot become the payload. Raw evidence
+  is one flag away (`include_raw_evidence`), off by default, on the record.
+- **A firewall that repeats what it just blocked is an injection amplifier with
+  extra steps.** That was a real defect during development, not a hypothetical:
+  `maskSecrets` masks credentials but has no opinion about imperatives, so the
+  first version of this mode returned attack text verbatim inside a security
+  report. The suite now asserts against the response bytes rather than against
+  the shape we intended to produce.
+
+```bash
+# Check the hygiene claims still hold
+npm run test:serve
+```
 
 ---
 
@@ -191,6 +287,9 @@ tunnelling shapes, known drop hosts. Allow-list for everything else.
 **Layer 3 — 13 action rules.** Destructive operations blocked; consequential
 operations confirmed; read-only operations untouched.
 
+All three are callable at runtime through `serve`, so the same policy that guards
+a wrapped session can also be consulted by an agent choosing its own next step.
+
 ## Precision
 
 A filter that screams at documentation gets uninstalled on day one, which is a
@@ -210,13 +309,19 @@ and the test suite asserts **zero** findings on them:
 engine    77 assertions   content rules, precision guards, result contract
 e2e       21 assertions   real proxy process, real JSON-RPC, three modes
 layers    72 assertions   egress policy, action policy, interception in-flight
+serve     79 assertions   dual-era protocol, tool dispatch, output hygiene
 bench     18 vectors + 8 controls
 ```
 
 ```bash
-npm test          # all three suites
+npm test          # all four suites
 npm run bench     # the scorecard
 ```
+
+The `serve` suite drives a real child process over real stdio, because the two
+things most likely to be wrong there cannot be tested as a library: a handshake
+answered in the wrong shape is a server no client can talk to, and a reply that
+repeats the payload it just flagged is an attack delivered.
 
 ---
 
