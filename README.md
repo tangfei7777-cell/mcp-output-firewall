@@ -1,5 +1,7 @@
 # mcp-output-firewall
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/tangfei7777-cell/mcp-output-firewall)
+
 **A three-layer firewall for MCP servers.**
 
 An MCP-enabled agent reads the output of every tool it calls, and it reads that
