@@ -1,0 +1,614 @@
+{
+  "last_scan": "2026-10-22T13:58:34Z",
+  "task_ids": {
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/757": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Kill libhyrt.a, cgo, and the 3-tier FFI bridge: AOT-transpile Rust boundary crates via wasm32 to pure bounds-checked Go (wasm2go linear-memory arenas per OwnHandle)",
+      "created": "2026-10-19T02:10:37Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/695": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Eliminate the Checker/Emitter Semantic Split: Emit-Driven Verification via Explicit Desugared MIR (`hy-mir`)",
+      "created": "2026-10-18T17:07:14Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/634": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Delete sendability analysis: task regions as serializable transactions",
+      "created": "2026-10-18T11:46:52Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/610": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Make FFI claims proof-carrying: verify boundary contracts against the linked Rust artifact",
+      "created": "2026-10-18T09:41:00Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/605": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard]",
+      "created": "2026-10-18T09:07:30Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/462": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Isolated WASM task cells: replace cross-task alias proofs with a wire boundary",
+      "created": "2026-10-17T15:01:39Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/417": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Serializable shared-state regions instead of exclusive ownership",
+      "created": "2026-10-17T10:36:18Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/378": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Compile fixed-rate task networks away: certified periodic Go kernels with explicit buffer budgets",
+      "created": "2026-10-17T06:28:49Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/375": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Kill libhyrt.a and the runtime stack-guard branch for SMALL/DEFAULT leaves: compile Rust leaves to Go-ABI0 assembly via LLVM + DWARF/stack-size certificates",
+      "created": "2026-10-17T06:04:47Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/352": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] GUARANTEES.md row 12 is wrong: cancellation-safety is a one-pass corollary of Tier-0",
+      "created": "2026-10-17T02:20:41Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/348": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Certify cancellation-safe structured task regions through blocking-effect admission",
+      "created": "2026-10-16T23:50:59Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/347": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Flip GUARANTEES Row 16 & Deadlock-Freedom from \"No claim\" to Guaranteed: Affine tx[T]/rx[T] Endpoint Split + Acyclic Wait-For Epochs in Pass B",
+      "created": "2026-10-16T23:04:32Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/345": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Make hy-emit untrusted: independently validated lowering to plain Go",
+      "created": "2026-10-16T22:12:20Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/327": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Make the A5 Go-escape a check-site with no Go API database: a capture-write at a foreign-call boundary takes `managed`",
+      "created": "2026-10-16T11:57:35Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/65": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$450] One command to run the full SpaceApp stack from source for contributors",
+      "created": "2026-10-16T05:30:34Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/64": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$400] Per-service container images: ship each image only the code and dependencies it runs",
+      "created": "2026-10-16T05:30:32Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/63": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$600] Support rootless Podman as a container engine in the run-spaceapp launcher",
+      "created": "2026-10-16T05:30:31Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/62": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$750] WebGL renderer for the 3D memory graph: 50,000 nodes at interactive frame rates",
+      "created": "2026-10-16T05:30:26Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/61": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$600] Export worker and workflow spans over OTLP: one trace from API request to every Temporal activity",
+      "created": "2026-10-16T05:30:25Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/oll4com/spaceapp/issues/60": {
+      "repo": "oll4com/spaceapp",
+      "title": "[$400] Test every Temporal workflow on a real time-skipping test server and gate replay determinism in CI",
+      "created": "2026-10-16T05:30:20Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "💎 Bounty"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/304": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Kill syntactic alias/loan/freeze tracking: replace path-sensitive value-flow (`freeze.rs` + `closures.rs`) with Linear Region Capabilities (`cap[R]`) and Isolated Sub-Graphs[wildcard]",
+      "created": "2026-10-16T05:01:00Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/294": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Lexical Split-Join Slice Capabilities via Zero-Allocation 3-Index Capacity Clipping",
+      "created": "2026-10-16T03:09:13Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/279": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Delete the alias graph: make ownership a capability the type carries",
+      "created": "2026-10-16T00:52:12Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/268": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Self-Hosted In-Process Analysis: Native Go Library Driver (x/tools/go/analysis) for Zero-Install IDE Checking and Compiler Unification",
+      "created": "2026-10-16T00:07:23Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/257": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Cancellation is not completion: checked settlement for own-handle task regions",
+      "created": "2026-10-15T22:44:44Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/239": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Region-Isolated Linear Slabs (HyRegion): Kill Go-Heap Alias Reconstruction and the 758 ns Handle-Table Wall via Task-Owned Off-Heap Page Transfer",
+      "created": "2026-10-15T17:44:04Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/200": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Stop erasing move to a no-op: Operational Take-and-Detach Lowering in hy-emit + Deleting the CGo/Rust Staticlib Bridge",
+      "created": "2026-10-15T13:03:53Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/193": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Kill the reconstruction: ownership as a visible capability surface (linear types + one runtime bit) replacing alias/loan/freeze",
+      "created": "2026-10-15T12:42:47Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/186": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Erase the .hy / .go Split: Whole-Package Tier-0 Checking via Native Go AST and Export-Data Analysis",
+      "created": "2026-10-15T12:09:37Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/184": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Generate closed channel protocols from one global program to make deadlock freedom achievable",
+      "created": "2026-10-15T11:47:12Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/limitlessprojects/Go-Hybrid/issues/174": {
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "[wildcard] Zero-Checker Emit: Offload Tier-0 Ownership, Freeze, and Loan Proofs to cmd/compile via CPS-Scoped Phantom Witnesses",
+      "created": "2026-10-15T11:05:52Z",
+      "labels": [
+        "💎 Bounty",
+        "wildcard"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/11398": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "Automate Bug Detection and Reviews",
+      "created": "2026-07-25T09:51:18Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780",
+        "$1k",
+        "$1.2k"
+      ]
+    },
+    "https://github.com/WillSmithTE/qdrant-qdrant/issues/337": {
+      "repo": "WillSmithTE/qdrant-qdrant",
+      "title": "Handle Out-Of-Disk gracefully",
+      "created": "2026-06-17T06:19:23Z",
+      "labels": [
+        "💎 Bounty",
+        "💰 Rewarded"
+      ]
+    },
+    "https://github.com/WillSmithTE/qdrant-qdrant/issues/320": {
+      "repo": "WillSmithTE/qdrant-qdrant",
+      "title": "Implement better handling of OOD issues in optimizer",
+      "created": "2026-06-17T06:18:30Z",
+      "labels": [
+        "💎 Bounty",
+        "💰 Rewarded"
+      ]
+    },
+    "https://github.com/tine1117/oss-hunter-livefire/issues/1": {
+      "repo": "tine1117/oss-hunter-livefire",
+      "title": "parse_duration drops the days (d) unit",
+      "created": "2026-06-01T14:37:16Z",
+      "labels": [
+        "💎 Bounty",
+        "$50"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2850": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "upload endpoint accepts empty file submissions as successful uploads",
+      "created": "2026-05-31T12:42:16Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2847": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "auth refresh endpoint issues tokens without verifying the requester",
+      "created": "2026-05-31T12:35:50Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2845": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "registerUser access token can reference a different user id",
+      "created": "2026-05-31T12:31:25Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2782": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "CORS configured without origin allowlist in app.js (reissue via #743)",
+      "created": "2026-05-31T09:57:22Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2779": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "POST /api/users endpoint missing authentication middleware (reissue via #743)",
+      "created": "2026-05-31T09:50:31Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2776": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "POST /api/reviews endpoint missing authentication middleware (reissue via #743)",
+      "created": "2026-05-31T09:48:14Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/2773": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "POST /api/proposals endpoint missing authentication middleware (reissue via #743)",
+      "created": "2026-05-31T09:43:35Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/1773": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "User creation endpoint has no input validation",
+      "created": "2026-05-30T03:14:49Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ]
+    },
+    "https://github.com/SecureBananaLabs/bug-bounty/issues/1772": {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "title": "Payment endpoint lacks authentication — unauthenticated payment creation",
+      "created": "2026-05-30T03:14:45Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ]
+    },
+    "https://github.com/watney-ai/open-source-bounties/issues/1": {
+      "repo": "watney-ai/open-source-bounties",
+      "title": "💰 BOUNTY: Fix typo in BOUNTY.md (€2.00)",
+      "created": "2026-04-28T22:18:58Z",
+      "labels": [
+        "good first issue",
+        "💰 BOUNTY"
+      ]
+    },
+    "https://github.com/vedanshjainvj/Job-Hive/issues/74": {
+      "repo": "vedanshjainvj/Job-Hive",
+      "title": "[ENHANCEMENT] : UI Change",
+      "created": "2025-01-14T20:02:55Z",
+      "labels": [
+        "✨enhancement",
+        "🙌 good first issue",
+        "💎 experience needed",
+        "SWOC",
+        "</> code addition",
+        "⭐🥇intermediate",
+        "🚨 high priority",
+        "✔️ swoc-accepted-issue",
+        "💰 bounty"
+      ]
+    },
+    "https://github.com/vedanshjainvj/Job-Hive/issues/6": {
+      "repo": "vedanshjainvj/Job-Hive",
+      "title": "[FEATURE] : Adding Super Admin Dashboard & Its Functionalities",
+      "created": "2024-12-30T16:50:08Z",
+      "labels": [
+        "💎 experience needed",
+        "SWOC",
+        "</> code addition",
+        "⭐🥇🏆 advance",
+        "🚨 high priority",
+        "✔️ swoc-accepted-issue",
+        "💰 bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/820": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "Add \"cancel\" feature to ongoing uploads, & \"delete\" to saved vids",
+      "created": "2018-10-03T07:16:20Z",
+      "labels": [
+        "👀 UI / UX",
+        "p - medium",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/751": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "Disallow repeated notifications (shake to indicate retrigger)",
+      "created": "2018-06-29T14:21:16Z",
+      "labels": [
+        "🍑 Low hanging fruit",
+        "👀 UI / UX",
+        "💰 Bounty",
+        "p - low"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/748": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "🚩 Add flags on /play pages",
+      "created": "2018-06-26T19:35:36Z",
+      "labels": [
+        "👀 UI / UX",
+        "💬 Discussion",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/741": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "Add option to see recovery key on \"settings\"",
+      "created": "2018-06-22T18:10:01Z",
+      "labels": [
+        "👀 UI / UX",
+        "p - medium",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/718": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "File size restriction messaging",
+      "created": "2018-06-13T23:12:58Z",
+      "labels": [
+        "👀 UI / UX",
+        "💰 Bounty",
+        "p - low"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/697": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "Add \"change password\" functionality",
+      "created": "2018-06-12T13:34:25Z",
+      "labels": [
+        "👀 UI / UX",
+        "p - medium",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-js/issues/270": {
+      "repo": "Paratii-Video/paratii-js",
+      "title": "implement image resize API",
+      "created": "2018-06-07T20:22:19Z",
+      "labels": [
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/675": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "use a single global ipfs instance when you have different players on the same page",
+      "created": "2018-06-04T16:07:16Z",
+      "labels": [
+        "🔋 Optimization",
+        "p - medium",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-portal/issues/612": {
+      "repo": "Paratii-Video/paratii-portal",
+      "title": "Implement view counter",
+      "created": "2018-05-23T15:46:32Z",
+      "labels": [
+        "🍑 Low hanging fruit",
+        "👀 UI / UX",
+        "💰 Bounty"
+      ]
+    },
+    "https://github.com/Paratii-Video/paratii-mediaplayer/issues/50": {
+      "repo": "Paratii-Video/paratii-mediaplayer",
+      "title": "📺 Implement chromecast support",
+      "created": "2018-02-26T17:05:27Z",
+      "labels": [
+        "💰 Bounty"
+      ]
+    }
+  }
+}
