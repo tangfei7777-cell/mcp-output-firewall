@@ -1,0 +1,270 @@
+{
+ "last_scan": "2026-10-23",
+ "task_count": 24,
+ "tasks": [
+  {
+   "id": "oll4com/spaceapp#65",
+   "repo": "oll4com/spaceapp",
+   "number": 65,
+   "title": "[$450] One command to run the full SpaceApp stack from source for contributors",
+   "url": "https://github.com/oll4com/spaceapp/issues/65",
+   "created_at": "2026-10-16T05:30:34Z",
+   "amount": "$450",
+   "comments": 48,
+   "is_pr": false
+  },
+  {
+   "id": "oll4com/spaceapp#64",
+   "repo": "oll4com/spaceapp",
+   "number": 64,
+   "title": "[$400] Per-service container images: ship each image only the code and dependencies it runs",
+   "url": "https://github.com/oll4com/spaceapp/issues/64",
+   "created_at": "2026-10-16T05:30:32Z",
+   "amount": "$400",
+   "comments": 54,
+   "is_pr": false
+  },
+  {
+   "id": "oll4com/spaceapp#63",
+   "repo": "oll4com/spaceapp",
+   "number": 63,
+   "title": "[$600] Support rootless Podman as a container engine in the run-spaceapp launcher",
+   "url": "https://github.com/oll4com/spaceapp/issues/63",
+   "created_at": "2026-10-16T05:30:31Z",
+   "amount": "$600",
+   "comments": 36,
+   "is_pr": false
+  },
+  {
+   "id": "oll4com/spaceapp#62",
+   "repo": "oll4com/spaceapp",
+   "number": 62,
+   "title": "[$750] WebGL renderer for the 3D memory graph: 50,000 nodes at interactive frame rates",
+   "url": "https://github.com/oll4com/spaceapp/issues/62",
+   "created_at": "2026-10-16T05:30:26Z",
+   "amount": "$750",
+   "comments": 39,
+   "is_pr": false
+  },
+  {
+   "id": "oll4com/spaceapp#61",
+   "repo": "oll4com/spaceapp",
+   "number": 61,
+   "title": "[$600] Export worker and workflow spans over OTLP: one trace from API request to every Temporal activity",
+   "url": "https://github.com/oll4com/spaceapp/issues/61",
+   "created_at": "2026-10-16T05:30:25Z",
+   "amount": "$600",
+   "comments": 39,
+   "is_pr": false
+  },
+  {
+   "id": "oll4com/spaceapp#60",
+   "repo": "oll4com/spaceapp",
+   "number": 60,
+   "title": "[$400] Test every Temporal workflow on a real time-skipping test server and gate replay determinism in CI",
+   "url": "https://github.com/oll4com/spaceapp/issues/60",
+   "created_at": "2026-10-16T05:30:20Z",
+   "amount": "$400",
+   "comments": 42,
+   "is_pr": false
+  },
+  {
+   "id": "calcom/cal.diy#30306",
+   "repo": "calcom/cal.diy",
+   "number": 30306,
+   "title": "fix: resolve issue #6622",
+   "url": "https://github.com/calcom/cal.diy/pull/30306",
+   "created_at": "2026-10-06T20:49:02Z",
+   "amount": null,
+   "comments": 3,
+   "is_pr": true
+  },
+  {
+   "id": "calcom/cal.diy#30305",
+   "repo": "calcom/cal.diy",
+   "number": 30305,
+   "title": "fix: resolve issue #1550",
+   "url": "https://github.com/calcom/cal.diy/pull/30305",
+   "created_at": "2026-10-06T20:48:49Z",
+   "amount": null,
+   "comments": 5,
+   "is_pr": true
+  },
+  {
+   "id": "howarewoo-tmp/calcom-cal-com-woostack-bench#2",
+   "repo": "howarewoo-tmp/calcom-cal-com-woostack-bench",
+   "number": 2,
+   "title": "feat: 2fa backup codes",
+   "url": "https://github.com/howarewoo-tmp/calcom-cal-com-woostack-bench/pull/2",
+   "created_at": "2026-08-12T16:13:57Z",
+   "amount": null,
+   "comments": 1,
+   "is_pr": true
+  },
+  {
+   "id": "WillSmithTE/qdrant-qdrant#337",
+   "repo": "WillSmithTE/qdrant-qdrant",
+   "number": 337,
+   "title": "Handle Out-Of-Disk gracefully",
+   "url": "https://github.com/WillSmithTE/qdrant-qdrant/issues/337",
+   "created_at": "2026-06-17T06:19:23Z",
+   "amount": null,
+   "comments": 9,
+   "is_pr": false
+  },
+  {
+   "id": "WillSmithTE/qdrant-qdrant#320",
+   "repo": "WillSmithTE/qdrant-qdrant",
+   "number": 320,
+   "title": "Implement better handling of OOD issues in optimizer",
+   "url": "https://github.com/WillSmithTE/qdrant-qdrant/issues/320",
+   "created_at": "2026-06-17T06:18:30Z",
+   "amount": null,
+   "comments": 14,
+   "is_pr": false
+  },
+  {
+   "id": "tine1117/oss-hunter-livefire#1",
+   "repo": "tine1117/oss-hunter-livefire",
+   "number": 1,
+   "title": "parse_duration drops the days (d) unit",
+   "url": "https://github.com/tine1117/oss-hunter-livefire/issues/1",
+   "created_at": "2026-06-01T14:37:16Z",
+   "amount": null,
+   "comments": 68,
+   "is_pr": false
+  },
+  {
+   "id": "vedanshjainvj/Job-Hive#74",
+   "repo": "vedanshjainvj/Job-Hive",
+   "number": 74,
+   "title": "[ENHANCEMENT] : UI Change",
+   "url": "https://github.com/vedanshjainvj/Job-Hive/issues/74",
+   "created_at": "2025-01-14T20:02:55Z",
+   "amount": null,
+   "comments": 10,
+   "is_pr": false
+  },
+  {
+   "id": "vedanshjainvj/Job-Hive#6",
+   "repo": "vedanshjainvj/Job-Hive",
+   "number": 6,
+   "title": "[FEATURE] : Adding Super Admin Dashboard & Its Functionalities",
+   "url": "https://github.com/vedanshjainvj/Job-Hive/issues/6",
+   "created_at": "2024-12-30T16:50:08Z",
+   "amount": null,
+   "comments": 11,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#820",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 820,
+   "title": "Add \"cancel\" feature to ongoing uploads, & \"delete\" to saved vids",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/820",
+   "created_at": "2018-10-03T07:16:20Z",
+   "amount": null,
+   "comments": 2,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#751",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 751,
+   "title": "Disallow repeated notifications (shake to indicate retrigger)",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/751",
+   "created_at": "2018-06-29T14:21:16Z",
+   "amount": null,
+   "comments": 6,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#748",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 748,
+   "title": "🚩 Add flags on /play pages",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/748",
+   "created_at": "2018-06-26T19:35:36Z",
+   "amount": null,
+   "comments": 1,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#741",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 741,
+   "title": "Add option to see recovery key on \"settings\"",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/741",
+   "created_at": "2018-06-22T18:10:01Z",
+   "amount": null,
+   "comments": 4,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#718",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 718,
+   "title": "File size restriction messaging",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/718",
+   "created_at": "2018-06-13T23:12:58Z",
+   "amount": null,
+   "comments": 2,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#697",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 697,
+   "title": "Add \"change password\" functionality",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/697",
+   "created_at": "2018-06-12T13:34:25Z",
+   "amount": null,
+   "comments": 1,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-js#270",
+   "repo": "Paratii-Video/paratii-js",
+   "number": 270,
+   "title": "implement image resize API",
+   "url": "https://github.com/Paratii-Video/paratii-js/issues/270",
+   "created_at": "2018-06-07T20:22:19Z",
+   "amount": null,
+   "comments": 2,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#675",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 675,
+   "title": "use a single global ipfs instance when you have different players on the same page",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/675",
+   "created_at": "2018-06-04T16:07:16Z",
+   "amount": null,
+   "comments": 1,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-portal#612",
+   "repo": "Paratii-Video/paratii-portal",
+   "number": 612,
+   "title": "Implement view counter",
+   "url": "https://github.com/Paratii-Video/paratii-portal/issues/612",
+   "created_at": "2018-05-23T15:46:32Z",
+   "amount": null,
+   "comments": 2,
+   "is_pr": false
+  },
+  {
+   "id": "Paratii-Video/paratii-mediaplayer#50",
+   "repo": "Paratii-Video/paratii-mediaplayer",
+   "number": 50,
+   "title": "📺 Implement chromecast support",
+   "url": "https://github.com/Paratii-Video/paratii-mediaplayer/issues/50",
+   "created_at": "2018-02-26T17:05:27Z",
+   "amount": null,
+   "comments": 3,
+   "is_pr": false
+  }
+ ]
+}
