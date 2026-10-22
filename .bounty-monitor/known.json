@@ -1,0 +1,31 @@
+{
+  "last_scan": "2026-10-23T04:10:00+08:00",
+  "note": "IDs = all non-blacklisted tasks seen in scan (labels: '💎 Bounty' + '💰 bounty', open, sorted by created). Filters applied on report: title amount OR repo pushed within 30d; blacklist excluded.",
+  "labels_scanned": ["💎 Bounty", "💰 bounty"],
+  "known_tasks": [
+    {"id": 5878909731, "repo": "oll4com/spaceapp", "num": 62, "created": "2026-10-16T05:30:26Z", "reported": true},
+    {"id": 5878909492, "repo": "oll4com/spaceapp", "num": 61, "created": "2026-10-16T05:30:25Z", "reported": true},
+    {"id": 5878910506, "repo": "oll4com/spaceapp", "num": 63, "created": "2026-10-16T05:30:31Z", "reported": true},
+    {"id": 5878910737, "repo": "oll4com/spaceapp", "num": 64, "created": "2026-10-16T05:30:32Z", "reported": true},
+    {"id": 5878910962, "repo": "oll4com/spaceapp", "num": 65, "created": "2026-10-16T05:30:34Z", "reported": true},
+    {"id": 5878908647, "repo": "oll4com/spaceapp", "num": 60, "created": "2026-10-16T05:30:20Z", "reported": true},
+    {"id": 4563956966, "repo": "tine1117/oss-hunter-livefire", "num": 1, "created": "2026-06-01T14:37:16Z", "reported": true},
+    {"id": 5735209346, "repo": "calcom/cal.diy", "num": 30306, "created": "2026-10-06T20:49:02Z", "reported": false, "reason": "PR (rewarded submission), not claimable"},
+    {"id": 5735206833, "repo": "calcom/cal.diy", "num": 30305, "created": "2026-10-06T20:48:49Z", "reported": false, "reason": "PR (rewarded submission), not claimable"},
+    {"id": 5132944463, "repo": "howarewoo-tmp/calcom-cal-com-woostack-bench", "num": 2, "created": "2026-08-12T16:13:57Z", "reported": false, "reason": "PR, not claimable"},
+    {"id": 4680661452, "repo": "WillSmithTE/qdrant-qdrant", "num": 337, "created": "2026-06-17T06:19:23Z", "reported": false, "reason": "no amount in title; repo not pushed since 2026-06-11"},
+    {"id": 4680656389, "repo": "WillSmithTE/qdrant-qdrant", "num": 320, "created": "2026-06-17T06:18:30Z", "reported": false, "reason": "no amount in title; repo not pushed since 2026-06-11"},
+    {"id": 2788179656, "repo": "vedanshjainvj/Job-Hive", "num": 74, "created": "2025-01-14T20:02:55Z", "reported": false, "reason": "no cash amount; repo stale since 2025-03"},
+    {"id": 2763458833, "repo": "vedanshjainvj/Job-Hive", "num": 6, "created": "2024-12-30T16:50:08Z", "reported": false, "reason": "no cash amount; repo stale since 2025-03"},
+    {"id": 366204566, "repo": "Paratii-Video/paratii-portal", "num": 820, "created": "2018-10-03T07:16:20Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 337017829, "repo": "Paratii-Video/paratii-portal", "num": 751, "created": "2018-06-29T14:21:16Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 335961920, "repo": "Paratii-Video/paratii-portal", "num": 748, "created": "2018-06-26T19:35:22Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 334971155, "repo": "Paratii-Video/paratii-portal", "num": 741, "created": "2018-06-22T18:10:00Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 332197378, "repo": "Paratii-Video/paratii-portal", "num": 718, "created": "2018-06-13T23:12:58Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 331590070, "repo": "Paratii-Video/paratii-portal", "num": 697, "created": "2018-06-12T13:34:25Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 330422053, "repo": "Paratii-Video/paratii-js", "num": 270, "created": "2018-06-07T20:22:19Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 329120981, "repo": "Paratii-Video/paratii-portal", "num": 675, "created": "2018-06-04T16:07:16Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 325766922, "repo": "Paratii-Video/paratii-portal", "num": 612, "created": "2018-05-23T15:46:32Z", "reported": false, "reason": "dead repo (2018), no amount"},
+    {"id": 300319448, "repo": "Paratii-Video/paratii-mediaplayer", "num": 50, "created": "2018-02-26T17:05:27Z", "reported": false, "reason": "dead repo (2018), no amount"}
+  ]
+}
