@@ -49,6 +49,52 @@ console.log("\n=== 1. Host extraction ===");
 }
 
 // ---------------------------------------------------------------------------
+console.log("\n=== 1b. Bare-host and encoded destinations ===");
+{
+  const policy = { allow: ["api.mycompany.com"] };
+  const mustBlock = [
+    // A destination-keyed hostname with no scheme — the most common shape an
+    // SSRF argument takes, and invisible to URL-based extraction.
+    ["bare metadata host", { tool: "http_request", args: { host: "metadata.google.internal" } }],
+    ["bare webhook drop host", { tool: "webhook", args: { webhook: "collector.evil.example/x" } }],
+    ["hostname key", { tool: "fetch", args: { hostname: "drop.evil.example" } }],
+    ["localhost with port", { tool: "db", args: { host: "localhost:5432" } }],
+    // Encoded IPv4 forms — the classic filter bypasses for dotted decimal.
+    ["hex metadata ip", { tool: "fetch", args: { host: "0xA9FEA9FE" } }],
+    ["integer metadata ip", { tool: "fetch", args: { host: "2852039166" } }],
+    ["integer loopback", { tool: "fetch", args: { host: "2130706433" } }],
+    ["hex loopback", { tool: "fetch", args: { host: "0x7f.0.0.1" } }],
+    ["octal loopback", { tool: "fetch", args: { host: "0177.0.0.1" } }],
+    ["short loopback", { tool: "fetch", args: { host: "127.1" } }],
+    ["this-network zero", { tool: "fetch", args: { host: "0.0.0.0" } }],
+    // IPv6 forms.
+    ["bracketed v6 loopback", { tool: "fetch", args: { host: "[::1]:8080" } }],
+    ["mapped v4 loopback", { tool: "fetch", args: { host: "[::ffff:127.0.0.1]" } }],
+    ["v6 link-local", { tool: "fetch", args: { host: "fe80::1" } }],
+    ["v6 unique-local", { tool: "fetch", args: { host: "fd00::dead" } }],
+  ];
+  for (const [label, call] of mustBlock) {
+    const v = evaluateCall(call, policy);
+    check(`${label} -> blocked`, v.some((x) => x.action === "block"), JSON.stringify(v));
+  }
+
+  const mustPass = [
+    // A bare word in a destination field is not a host and must stay invisible
+    // to the policy, or every deploy call becomes a finding.
+    ["bare word target", { tool: "deploy", args: { target: "production" } }],
+    ["time-like value", { tool: "schedule", args: { endpoint: "12:30" } }],
+    // A public dotted quad that merely looks like a version must not move.
+    ["public dotted quad", { tool: "fetch", args: { url: "https://1.2.3.4/x" } }],
+    ["v6 global unicast", { tool: "fetch", args: { host: "2606:4700::1111" } }],
+    ["ordinary public host", { tool: "fetch", args: { host: "some-new-api.dev" } }],
+  ];
+  for (const [label, call] of mustPass) {
+    const v = evaluateCall(call, policy);
+    check(`${label} -> not blocked`, !v.some((x) => x.action === "block"), JSON.stringify(v));
+  }
+}
+
+// ---------------------------------------------------------------------------
 console.log("\n=== 2. Egress policy: what must be blocked ===");
 {
   const policy = { allow: ["api.mycompany.com"] };

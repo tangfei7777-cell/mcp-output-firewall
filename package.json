@@ -9,17 +9,40 @@
     "mcp-output-firewall": "lib/cli.js"
   },
   "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
   "exports": {
-    ".": "./lib/index.js",
-    "./rules": "./lib/rules.js",
-    "./egress": "./lib/egress.js",
-    "./action": "./lib/action.js",
-    "./proxy": "./lib/proxy.js",
-    "./serve": "./lib/serve.js",
-    "./benchmark": "./lib/benchmark.js"
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./rules": {
+      "types": "./types/rules.d.ts",
+      "default": "./lib/rules.js"
+    },
+    "./egress": {
+      "types": "./types/egress.d.ts",
+      "default": "./lib/egress.js"
+    },
+    "./action": {
+      "types": "./types/action.d.ts",
+      "default": "./lib/action.js"
+    },
+    "./proxy": {
+      "types": "./types/proxy.d.ts",
+      "default": "./lib/proxy.js"
+    },
+    "./serve": {
+      "types": "./types/serve.d.ts",
+      "default": "./lib/serve.js"
+    },
+    "./benchmark": {
+      "types": "./types/benchmark.d.ts",
+      "default": "./lib/benchmark.js"
+    }
   },
   "files": [
     "lib",
+    "types",
     "README.md",
     "LICENSE"
   ],
@@ -29,6 +52,9 @@
     "test:e2e": "node test/e2e.js",
     "test:layers": "node test/layers.js",
     "test:serve": "node test/serve.js",
+    "typecheck": "tsc --noEmit",
+    "types": "tsc",
+    "prepack": "npm run types",
     "bench": "node lib/cli.js bench",
     "demo": "node lib/cli.js scan --demo --min-severity high",
     "rules": "node lib/cli.js rules"
@@ -61,5 +87,9 @@
   "author": "Jet",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
   }
 }

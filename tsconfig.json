@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": false,
+    "rootDir": "lib",
+    "outDir": "types",
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": [],
+  "files": [
+    "lib/index.js",
+    "lib/action.js",
+    "lib/adversarial.js",
+    "lib/benchmark.js",
+    "lib/cli.js",
+    "lib/demo.js",
+    "lib/egress.js",
+    "lib/proxy.js",
+    "lib/report.js",
+    "lib/rules.js",
+    "lib/serve.js",
+    "lib/version.js"
+  ]
+}
