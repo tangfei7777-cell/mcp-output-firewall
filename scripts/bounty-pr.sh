@@ -12,6 +12,11 @@
 
 set -euo pipefail
 
+# 第三方仓库写权限走 device-flow PAT (public_repo); 沙箱默认 ghu_ token 仅自己仓库可写
+if [ -z "${GH_TOKEN:-}" ] && [ -s /workspace/.gh-pat ]; then
+  GH_TOKEN=$(cat /workspace/.gh-pat); export GH_TOKEN
+fi
+
 GH_USER="${GH_USER:-tangfei7777-cell}"
 WORKROOT="${WORKROOT:-/workspace/.bounty-work}"
 BLACKLIST="SecureBananaLabs/bug-bounty ClankerNation/OpenAgents limitlessprojects/Go-Hybrid watney-ai/open-source-bounties"
